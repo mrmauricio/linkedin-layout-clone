@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+
+* {
+    /* reset */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f5;
+    font-family: "Source Sans Pro", sans-serif;
+    /* propriedades para a fonte ficar mais legível */
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+input,
+button {
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header#main-header {
+    width: 100vw;
+    height: 52px;
+    position: fixed;
+    background: black;
+}
+
+div.container {
+    max-width: 1188px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    display: grid;
+    grid-template-areas:
+        "ads ads ads"
+        "left-aside main-section right-aside";
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 216px 1fr 310px;
+}
+
+div.container section#ads {
+    grid-area: ads;
+    display: flex;
+    align-items: flex-end;
+}
+
+div.container section#ads div {
+    padding: 16px 0;
+    height: 50%;
+    background: red;
+    flex: 1;
+}
+
+div.container aside#left-aside {
+    grid-area: left-aside;
+    background: green;
+    height: 100vh;
+}
+div.container main#main-section {
+    grid-area: main-section;
+    margin: 0 25px;
+    background: blue;
+    height: 100vh;
+}
+div.container aside#right-aside {
+    grid-area: right-aside;
+    background: yellow;
+    height: 100vh;
+}
