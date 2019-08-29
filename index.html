@@ -19,15 +19,17 @@
                     <input
                         id="search"
                         type="text"
-                        placeholder="&#xf002;"
+                        placeholder="     Search"
                         onfocus="this.placeholder=''"
-                        onblur="this.placeholder='&#xf002;'"
+                        onblur="this.placeholder='     Search'"
                     />
+                    <span id="search" class="fas fa-search"></span>
+                    <span id="search-button" class="fas fa-search"></span>
                 </div>
                 <nav>
                     <ul>
                         <li>
-                            <div class="selected">
+                            <div id="home" class="selected">
                                 <span class="fas fa-home"></span>
                                 <span class="nav-item-text">Home</span>
                             </div>
@@ -77,7 +79,7 @@
                                 ></span>
                             </div>
                         </li>
-                        <li>
+                        <li id="small">
                             <div>
                                 <small>Try Premium Free for 1 Month</small>
                             </div>
