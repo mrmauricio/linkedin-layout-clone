@@ -24,11 +24,117 @@ a {
     text-decoration: none;
 }
 
-header#main-header {
-    width: 100vw;
+header {
     height: 52px;
     position: fixed;
-    background: black;
+    background: #283c4a;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+div#main-header {
+    width: 1188px;
+    padding-left: 24px;
+    padding-right: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#main-header > div {
+    display: flex;
+    align-items: center;
+}
+
+div#main-header > div > img {
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+}
+
+div#main-header div input {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    background: #e1e9ee;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    height: 34px;
+    color: rgba(40, 62, 74, 0.75);
+    padding-left: 10px;
+}
+
+div#main-header nav {
+    margin-right: 17px;
+}
+
+div#main-header nav ul {
+    display: flex;
+    align-items: flex-end;
+}
+
+div#main-header nav ul li {
+    color: #c7d1d8;
+    display: inline-block;
+    height: 52px;
+}
+
+div#main-header nav ul li div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 80px;
+    font-size: 20px;
+    height: 100%;
+    padding-bottom: 3px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+div#main-header nav ul li div:hover {
+    color: #fff;
+}
+
+div#main-header nav ul li div.selected {
+    border-bottom: solid 2px #fff;
+    color: #fff;
+}
+
+div#main-header nav ul li div#right-border {
+    border-right: solid 1px rgba(255, 255, 255, 0.3);
+}
+
+div#main-header nav ul li div img {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: 1px solid #e1e9ee;
+}
+
+div#main-header nav ul li div small {
+    font-size: 13px;
+    width: 100px;
+    text-align: center;
+    padding-bottom: 5px;
+    color: #d3d2a1;
+    margin-left: 20px;
+}
+
+div#main-header nav ul li div small:hover {
+    text-decoration: underline;
+}
+
+div#main-header nav ul li div span.nav-item-text {
+    font-size: 13px;
+}
+
+div#main-header nav ul li div span.nav-item-text span {
+    margin-left: 4px;
 }
 
 div.container {

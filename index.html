@@ -6,10 +6,86 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Linkedin</title>
 
+        <link rel="shortcut icon" type="image/png" href="/images/favicon.ico" />
         <link rel="stylesheet" href="style.css" />
+
+        <script src="https://kit.fontawesome.com/3055f91a99.js"></script>
     </head>
     <body>
-        <header id="main-header">MAIN HEADER</header>
+        <header>
+            <div id="main-header">
+                <div>
+                    <img src="/images/linkedin.png" alt="" />
+                    <input
+                        id="search"
+                        type="text"
+                        placeholder="&#xf002;"
+                        onfocus="this.placeholder=''"
+                        onblur="this.placeholder='&#xf002;'"
+                    />
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <div class="selected">
+                                <span class="fas fa-home"></span>
+                                <span class="nav-item-text">Home</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span class="fas fa-user-friends"></span>
+                                <span class="nav-item-text">My Network</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span class="fas fa-suitcase"></span>
+                                <span class="nav-item-text">Jobs</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span class="far fa-envelope"></span>
+                                <span class="nav-item-text">Messaging</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span class="far fa-bell"></span>
+                                <span class="nav-item-text">Notifications</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="right-border">
+                                <img
+                                    src="/images/picture.jpeg"
+                                    alt="Profile picture"
+                                />
+
+                                <span class="nav-item-text">
+                                    Me<span class="fas fa-caret-down"> </span
+                                ></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <span class="fas fa-th"></span>
+
+                                <span class="nav-item-text"
+                                    >Work<span class="fas fa-caret-down"> </span
+                                ></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <small>Try Premium Free for 1 Month</small>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <div class="container">
             <!-- PROPAGANDA -->
             <section id="ads">
