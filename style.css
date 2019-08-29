@@ -120,9 +120,10 @@ div#main-header nav ul li div small {
     font-size: 13px;
     width: 100px;
     text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
     color: #d3d2a1;
     margin-left: 20px;
+    line-height: 1.2;
 }
 
 div#main-header nav ul li div small:hover {
@@ -159,8 +160,35 @@ div.container section#ads {
 div.container section#ads div {
     padding: 16px 0;
     height: 50%;
-    background: red;
     flex: 1;
+    text-align: center;
+    font-size: 15px;
+    font-family: helvetica, arial, sans-serif;
+}
+
+div.container section#ads div strong {
+    cursor: pointer;
+}
+
+div.container section#ads div strong:hover {
+    text-decoration: underline;
+}
+
+div.container section#ads div span#ad-title {
+    font-weight: bold;
+    color: #0084bf;
+}
+
+div.container section#ads div span#ad-subtitle {
+    padding-left: 3px;
+    font-weight: bold;
+    color: #434649;
+}
+
+div.container section#ads div span#ad {
+    font-size: 13px;
+    padding-left: 3px;
+    color: rgba(82, 67, 67, 0.55);
 }
 
 div.container aside#left-aside {
