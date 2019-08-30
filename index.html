@@ -9,6 +9,7 @@
         <link rel="shortcut icon" type="image/png" href="/images/favicon.ico" />
         <link rel="stylesheet" href="style.css" />
 
+        <script src="/script.js"></script>
         <script src="https://kit.fontawesome.com/3055f91a99.js"></script>
     </head>
     <body>
@@ -16,15 +17,17 @@
             <div id="main-header">
                 <div>
                     <img src="/images/linkedin.png" alt="" />
-                    <input
-                        id="search"
-                        type="text"
-                        placeholder="     Search"
-                        onfocus="this.placeholder=''"
-                        onblur="this.placeholder='     Search'"
-                    />
-                    <span id="search" class="fas fa-search"></span>
-                    <span id="search-button" class="fas fa-search"></span>
+                    <div>
+                        <input
+                            id="search"
+                            type="text"
+                            placeholder="     Search"
+                            onfocus="toggleSearchInput()"
+                            onblur="toggleSearchInput()"
+                        />
+                        <span id="search-icon" class="fas fa-search"></span>
+                        <span id="search-button" class="fas fa-search"></span>
+                    </div>
                 </div>
                 <nav>
                     <ul>

@@ -47,7 +47,6 @@ div#main-header > div {
     display: flex;
     align-items: center;
     width: 100%;
-    position: relative;
 }
 
 div#main-header > div > img {
@@ -69,24 +68,33 @@ div#main-header div input {
     padding-left: 10px;
 }
 
-div#main-header div input:focus {
+div#main-header > div div {
+    display: flex;
+    flex: 1;
+    max-width: 280px;
+    position: relative;
+}
+
+div#main-header > div div input:focus {
     background: #fff;
 }
 
-div#main-header div input:focus + #search {
-    display: none;
-}
-
-div#main-header div span#search {
+div#main-header div div span#search-icon {
     position: absolute;
-    left: 57px;
-    top: 14px;
+    left: 10px;
+    top: 12px;
     font-size: 12px;
     color: #283e4a;
 }
 
-div#main-header div span#search-button {
-    background: red;
+div#main-header div div span#search-button {
+    display: none;
+    position: absolute;
+    right: 0;
+    padding: 9px;
+    background: #e1e9ee;
+    color: #0084bf;
+    border-radius: 2px;
 }
 
 div#main-header nav {
