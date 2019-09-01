@@ -13,8 +13,8 @@
         <script src="https://kit.fontawesome.com/3055f91a99.js"></script>
     </head>
     <body>
-        <header>
-            <div id="main-header">
+        <header id="main-header">
+            <div>
                 <div>
                     <img src="/images/linkedin.png" alt="" />
                     <div>
@@ -141,7 +141,93 @@
                     </a>
                 </div>
                 <div id="profile-groups">
-                    segundo card
+                    <section>
+                        <header
+                            onmouseover="showProfileGroupIcon(this)"
+                            onmouseout="showProfileGroupIcon(this)"
+                        >
+                            <span>Recent</span>
+                            <span
+                                class="fas fa-angle-up"
+                                onclick="toggleProfileGroupList(this)"
+                            ></span>
+                        </header>
+                        <ul class="group-list">
+                            <li>
+                                <span class="fas fa-users"></span>
+                                <span>React Developers</span>
+                            </li>
+                            <li>
+                                <span class="fas fa-hashtag"></span>
+                                <span>javascript</span>
+                            </li>
+                            <li>
+                                <span class="fas fa-hashtag"></span>
+                                <span>webdevelopment</span>
+                            </li>
+                            <li>
+                                <span class="fas fa-users"></span>
+                                <span>Javascript Brasil</span>
+                            </li>
+                            <li>
+                                <span class="fas fa-users"></span>
+                                <span>Dog Lovers</span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <header
+                            onmouseover="showProfileGroupIcon(this)"
+                            onmouseout="showProfileGroupIcon(this)"
+                        >
+                            <span class="group-title">Groups</span>
+                            <span
+                                class="fas fa-angle-up"
+                                onclick="toggleProfileGroupList(this)"
+                            ></span>
+                        </header>
+                        <ul>
+                            <li>
+                                <span class="fas fa-users"></span>
+                                <span id="aaaa">React Developers</span>
+                            </li>
+                            <li>
+                                <span class="fas fa-users"></span>
+                                <span>Javascript Brasil</span>
+                            </li>
+                            <li>
+                                <span class="fas fa-users"></span>
+                                <span>Dog Lovers</span>
+                            </li>
+                        </ul>
+                        <div class="group-list">
+                            <a href="#">See all</a>
+                        </div>
+                    </section>
+                    <section>
+                        <header
+                            onmouseover="showProfileGroupIcon(this)"
+                            onmouseout="showProfileGroupIcon(this)"
+                        >
+                            <span class="group-title"> Followed Hashtags</span>
+                            <span
+                                class="fas fa-angle-up"
+                                onclick="toggleProfileGroupList(this)"
+                            ></span>
+                        </header>
+                        <ul>
+                            <li>
+                                <span class="fas fa-hashtag"></span>
+                                <span>javascript</span>
+                            </li>
+                            <li>
+                                <span class="fas fa-hashtag"></span>
+                                <span>webdevelopment</span>
+                            </li>
+                        </ul>
+                        <a href="#">See all</a>
+                    </section>
+                    <a href="#">Discover more</a>
                 </div>
             </aside>
             <!-- MAIN AREA -->
