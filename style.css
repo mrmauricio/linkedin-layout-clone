@@ -537,7 +537,7 @@ div.container aside#right-aside {
     background-color: #fff;
     border: 1px solid #cfcfcf;
     border-radius: 2px;
-    height: 100vh;
+    height: 710px;
 }
 
 /**************************************************************************
@@ -545,7 +545,7 @@ div.container aside#right-aside {
 **************************************************************************/
 
 aside#right-aside div#rec-section {
-    height: 283px;
+    height: 273px;
     padding: 16px 0;
     border-bottom: 1px solid #cfcfcf;
 }
@@ -611,7 +611,7 @@ aside#right-aside div#rec-section div header span.fas div#square {
 }
 
 aside#right-aside div#rec-section > div > div {
-    padding-bottom: 10px;
+    padding-bottom: 6px;
 }
 
 aside#right-aside div#rec-section > div > div > div {
@@ -677,7 +677,124 @@ aside#right-aside div#rec-section > div > div > div button span.fas {
 
 aside#right-aside div#rec-section > div > a {
     color: #0073b1;
-    font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
     margin: 13px;
+}
+
+aside#right-aside div#rec-section > div > a:hover {
+    color: #016194;
+}
+
+/**************************************************************************
+    main container > right aside > LINKEDIN SECTION
+**************************************************************************/
+
+aside#right-aside div#linkedin-section section {
+    height: 279px;
+    padding: 16px 0;
+    border-bottom: 1px solid #cfcfcf;
+
+    display: flex;
+    flex-direction: column;
+}
+
+aside#right-aside div#linkedin-section section small {
+    align-self: flex-end;
+    padding-right: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 2px;
+}
+
+aside#right-aside div#linkedin-section section a span {
+    color: rgba(0, 0, 0, 0.6);
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    padding: 0 12px;
+}
+
+aside#right-aside div#linkedin-section section a div {
+    display: flex;
+    justify-content: center;
+}
+
+aside#right-aside div#linkedin-section section a div img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+aside#right-aside div#linkedin-section section a div img#linkedin-key {
+    border-radius: 0;
+}
+
+aside#right-aside div#linkedin-section section a strong {
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    padding: 0 16px;
+    font-weight: normal;
+}
+
+aside#right-aside div#linkedin-section section a button {
+    background: #fff;
+    color: #0073b1;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid #0073b1;
+    border-radius: 2px;
+    height: 34px;
+    padding: 0 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+aside#right-aside div#linkedin-section footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-size: 14px;
+    color: #485d69;
+    margin: 18px 0;
+}
+
+aside#right-aside div#linkedin-section footer ul li {
+    margin: 2.5px 12px;
+    cursor: pointer;
+}
+
+aside#right-aside div#linkedin-section footer ul li:hover {
+    color: #0073b1;
+}
+
+aside#right-aside div#linkedin-section footer ul li:hover .fas {
+    color: #0073b1;
+}
+
+aside#right-aside div#linkedin-section footer ul li span {
+    padding: 4px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+aside#right-aside div#linkedin-section footer > div {
+    text-align: center;
+    font-size: 14px;
+}
+
+aside#right-aside div#linkedin-section footer > div > strong span {
+    background: #0073b1;
+    color: #fff;
+    padding: 0 2px;
+    border-radius: 2px;
+    margin: 1px;
+    font-size: 12px;
+}
+
+aside#right-aside div#linkedin-section footer > div > span {
+    font-size: 13px;
 }
