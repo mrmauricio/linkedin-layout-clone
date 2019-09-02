@@ -21,6 +21,7 @@ body {
 input,
 button {
     outline: 0;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 a {
@@ -524,8 +525,121 @@ aside#left-aside div#profile-groups section .group-list {
 div.container main#main-section {
     grid-area: main-section;
     margin: 0 25px;
-    background: blue;
+    width: 550px;
     height: 100vh;
+}
+
+/**************************************************************************
+    main container > main section > SHARE BOX & FEED SORT
+**************************************************************************/
+
+main#main-section div#share-box {
+    background: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main#main-section div#share-box div#button-box {
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+main#main-section div#share-box div#button-box .fas {
+    font-size: 18px;
+}
+
+main#main-section div#share-box div#button-box button {
+    background: #fff;
+    border: 0;
+    color: #696c6f;
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 26px 26.5px;
+    cursor: pointer;
+}
+
+main#main-section div#share-box div#button-box button#btn-post {
+    width: 333px;
+    text-align: left;
+    padding: 26px 17px;
+}
+
+main#main-section div#share-box div#button-box button#btn-post:hover {
+    color: #0073b1;
+}
+
+main#main-section
+    div#share-box
+    div#button-box
+    button#btn-post:hover
+    span#btn-text {
+    text-decoration: underline;
+}
+
+main#main-section div#share-box div#button-box button#btn-post span#btn-text {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 6px;
+}
+
+main#main-section div#share-box div#button-box button#btn-document {
+    border-right: 0;
+    padding: 0 30px;
+}
+
+main#main-section div#share-box div#button-box button#btn-picture:hover,
+main#main-section div#share-box div#button-box button#btn-video:hover,
+main#main-section div#share-box div#button-box button#btn-document:hover {
+    background: #f3f6f8;
+}
+
+main#main-section div#link-box {
+    padding: 13px 16px;
+    background: #f3f6f8;
+    font-size: 14px;
+}
+
+main#main-section div#link-box a {
+    color: #0073b1;
+    font-weight: bold;
+    padding-right: 1px;
+}
+
+main#main-section div#link-box a:hover {
+    text-decoration: underline;
+}
+
+main#main-section div#feed-sort {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+}
+
+main#main-section div#feed-sort hr {
+    flex: 1;
+    border: 0;
+    display: block;
+    height: 1px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+main#main-section div#feed-sort button {
+    border: 0;
+    background: transparent;
+    margin-left: 15px;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+main#main-section div#feed-sort button span {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+main#main-section div#feed-sort button span.fas {
+    font-size: 18px;
+    padding: 0 2px;
 }
 
 /**************************************************************************
