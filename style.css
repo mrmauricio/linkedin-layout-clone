@@ -46,7 +46,7 @@ header#main-header > div {
     padding-left: 24px;
     padding-right: 40px;
 
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
 }
@@ -233,12 +233,13 @@ div.container {
     margin: 0 auto;
     padding: 0 30px;
 
-    display: grid;
     grid-template-areas:
         "ads ads ads"
         "left-aside main-section right-aside";
     grid-template-rows: 100px 1fr;
     grid-template-columns: 216px 1fr 312px;
+
+    display: none;
 }
 
 /**************************************************************************
@@ -537,6 +538,7 @@ main#main-section div#share-box {
     background: #fff;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
     border-radius: 2px;
+    margin-top: 1px;
 
     display: flex;
     flex-direction: column;
@@ -778,6 +780,8 @@ aside#right-aside div#rec-section > div > div > div button {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: background 0.2s;
 }
 
 aside#right-aside div#rec-section > div > div > div button:hover {
@@ -911,4 +915,86 @@ aside#right-aside div#linkedin-section footer > div > strong span {
 
 aside#right-aside div#linkedin-section footer > div > span {
     font-size: 13px;
+}
+
+/**************************************************************************
+    LOADING PAGE
+**************************************************************************/
+
+div#loading-page > div {
+    position: fixed;
+    top: 25%;
+    left: calc(50% - 32px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#loading-page img {
+    width: 50px;
+    height: 50px;
+}
+
+div#dot-loader {
+    padding-left: 2px;
+    width: 64px;
+    height: 64px;
+}
+
+/* css loader from loading.io */
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+.lds-ellipsis div {
+    position: absolute;
+    top: 27px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #0073b1;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+    left: 6px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+    left: 6px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+    left: 26px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+    left: 45px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(19px, 0);
+    }
 }
