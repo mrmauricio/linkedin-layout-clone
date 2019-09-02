@@ -42,3 +42,17 @@ function toggleProfileGroupList(icon) {
         }
     }
 }
+
+function showRecommendationsInfo(element) {
+    const [div, span, square] = element.children;
+
+    if (div.style.display === "block") {
+        div.style.display = "none";
+        span.style.display = "none";
+        square.style.display = "none";
+    } else {
+        div.style.display = "block";
+        span.style.display = "block";
+        square.style.display = "block";
+    }
+}

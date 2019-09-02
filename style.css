@@ -237,7 +237,7 @@ div.container {
         "ads ads ads"
         "left-aside main-section right-aside";
     grid-template-rows: 100px 1fr;
-    grid-template-columns: 216px 1fr 310px;
+    grid-template-columns: 216px 1fr 312px;
 }
 
 /**************************************************************************
@@ -250,7 +250,7 @@ div.container section#ads {
     align-items: flex-end;
 }
 
-div.container section#ads div {
+section#ads div {
     padding: 16px 0;
     height: 50%;
     flex: 1;
@@ -259,25 +259,25 @@ div.container section#ads div {
     font-family: helvetica, arial, sans-serif;
 }
 
-div.container section#ads div a {
+section#ads div a {
     cursor: pointer;
     font-weight: bold;
 }
 
-div.container section#ads div a:hover {
+section#ads div a:hover {
     text-decoration: underline;
 }
 
-div.container section#ads div span#ad-title {
+section#ads div span#ad-title {
     color: #0084bf;
 }
 
-div.container section#ads div span#ad-subtitle {
+section#ads div span#ad-subtitle {
     padding-left: 3px;
     color: #434649;
 }
 
-div.container section#ads div span#ad {
+section#ads div span#ad {
     font-size: 13px;
     padding-left: 3px;
     color: rgba(82, 67, 67, 0.55);
@@ -287,12 +287,12 @@ div.container section#ads div span#ad {
     main container > LEFT ASIDE
 **************************************************************************/
 
-div.container aside#left-aside {
+.container aside#left-aside {
     grid-area: left-aside;
     height: 100vh;
 }
 
-div.container aside#left-aside > div {
+.container aside#left-aside > div {
     background: #fff;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), 0 2px 3px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
@@ -302,7 +302,7 @@ div.container aside#left-aside > div {
     main container > left aside > PROFILE CARD
 **************************************************************************/
 
-div.container aside#left-aside div#profile-card {
+aside#left-aside div#profile-card {
     height: 305px;
     margin-bottom: 8px;
 
@@ -310,7 +310,7 @@ div.container aside#left-aside div#profile-card {
     flex-direction: column;
 }
 
-div.container aside#left-aside div#profile-card div#background {
+aside#left-aside div#profile-card div#background {
     height: 54px;
     background: linear-gradient(
         90deg,
@@ -319,7 +319,7 @@ div.container aside#left-aside div#profile-card div#background {
     );
 }
 
-div.container aside#left-aside div#profile-card div#profile-info {
+aside#left-aside div#profile-card div#profile-info {
     height: 161px;
     width: 216px;
     background: transparent;
@@ -332,7 +332,7 @@ div.container aside#left-aside div#profile-card div#profile-info {
     align-items: center;
 }
 
-div.container aside#left-aside div#profile-card div#profile-info img {
+aside#left-aside div#profile-card div#profile-info img {
     width: 72px;
     height: 72px;
     border-radius: 50%;
@@ -343,19 +343,19 @@ div.container aside#left-aside div#profile-card div#profile-info img {
     cursor: pointer;
 }
 
-div.container aside#left-aside div#profile-card div#profile-info strong {
+aside#left-aside div#profile-card div#profile-info strong {
     font-size: 18px;
     letter-spacing: 0.5px;
     margin-bottom: 5px;
     cursor: pointer;
 }
 
-div.container aside#left-aside div#profile-card div#profile-info small {
+aside#left-aside div#profile-card div#profile-info small {
     font-size: 13px;
     color: rgba(0, 0, 0, 0.6);
 }
 
-div.container aside#left-aside div#profile-card div#profile-links {
+aside#left-aside div#profile-card div#profile-links {
     font-size: 14px;
     padding-top: 6px;
 
@@ -363,38 +363,33 @@ div.container aside#left-aside div#profile-card div#profile-links {
     flex-direction: column;
 }
 
-div.container aside#left-aside div#profile-card div#profile-links a {
+aside#left-aside div#profile-card div#profile-links a {
     display: flex;
     justify-content: space-between;
     padding: 3px 12px;
 }
 
-div.container aside#left-aside div#profile-card div#profile-links a:hover {
+aside#left-aside div#profile-card div#profile-links a:hover {
     text-decoration: underline;
 }
 
-div.container aside#left-aside div#profile-card div#profile-links a span {
+aside#left-aside div#profile-card div#profile-links a span {
     color: rgba(0, 0, 0, 0.6);
     font-weight: bold;
 }
 
-div.container
-    aside#left-aside
-    div#profile-card
-    div#profile-links
-    a
-    span.profile-number {
+aside#left-aside div#profile-card div#profile-links a span.profile-number {
     color: #0073b1;
 }
 
-div.container aside#left-aside div#profile-card > span {
+aside#left-aside div#profile-card > span {
     font-size: 12px;
     padding: 0 12px;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.9);
 }
 
-div.container aside#left-aside div#profile-card > a {
+aside#left-aside div#profile-card > a {
     font-size: 13px;
     margin-top: 15px;
     line-height: 15px;
@@ -405,19 +400,19 @@ div.container aside#left-aside div#profile-card > a {
     align-items: center;
 }
 
-div.container aside#left-aside div#profile-card > a span#profile-premium {
+aside#left-aside div#profile-card > a span#profile-premium {
     color: rgba(0, 0, 0, 0.9);
     font-weight: bold;
     font-size: 12px;
 }
 
-div.container aside#left-aside div#profile-card > a span#profile-premium span {
+aside#left-aside div#profile-card > a span#profile-premium span {
     padding-right: 4px;
     color: #b29a53;
     font-size: 16px;
 }
 
-div.container aside#left-aside div#profile-card > a:hover {
+aside#left-aside div#profile-card > a:hover {
     text-decoration: underline;
 }
 
@@ -425,17 +420,17 @@ div.container aside#left-aside div#profile-card > a:hover {
     main container > left aside > PROFILE GROUPS
 **************************************************************************/
 
-div.container aside#left-aside div#profile-groups {
+aside#left-aside div#profile-groups {
     padding-top: 8px;
 }
 
-div.container aside#left-aside div#profile-groups section {
+aside#left-aside div#profile-groups section {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
     font-weight: bold;
 }
 
-div.container aside#left-aside div#profile-groups section header {
+aside#left-aside div#profile-groups section header {
     padding: 3px 12px 5px;
     font-weight: normal;
     color: #000;
@@ -444,7 +439,7 @@ div.container aside#left-aside div#profile-groups section header {
     justify-content: space-between;
 }
 
-div.container aside#left-aside div#profile-groups section header span.fas {
+aside#left-aside div#profile-groups section header span.fas {
     font-size: 18px;
     color: rgba(0, 0, 0, 0.6);
     display: none;
@@ -452,67 +447,57 @@ div.container aside#left-aside div#profile-groups section header span.fas {
     padding: 0 7px;
 }
 
-div.container aside#left-aside div#profile-groups section header:hover {
+aside#left-aside div#profile-groups section header:hover {
     background: #f3f5f7;
 }
 
-div.container aside#left-aside div#profile-groups section span.group-title {
+aside#left-aside div#profile-groups section span.group-title {
     color: #0073b1;
     font-weight: bold;
     cursor: pointer;
 }
 
-div.container
-    aside#left-aside
-    div#profile-groups
-    section
-    span.group-title:hover {
+aside#left-aside div#profile-groups section span.group-title:hover {
     text-decoration: underline;
 }
 
-div.container aside#left-aside div#profile-groups section ul {
+aside#left-aside div#profile-groups section ul {
     margin-bottom: 2px;
 }
 
-div.container aside#left-aside div#profile-groups section ul li {
+aside#left-aside div#profile-groups section ul li {
     list-style: none;
     padding: 3px 12px;
     cursor: pointer;
 }
 
-div.container aside#left-aside div#profile-groups section ul li:hover {
+aside#left-aside div#profile-groups section ul li:hover {
     background: #f3f5f7;
 }
 
-div.container
-    aside#left-aside
-    div#profile-groups
-    section
-    ul
-    li
-    span:last-child:hover {
+aside#left-aside div#profile-groups section ul li span:last-child:hover {
     color: #0073b1;
     text-decoration: underline;
 }
 
-div.container aside#left-aside div#profile-groups section ul li .fas {
+aside#left-aside div#profile-groups section ul li .fas {
     width: 20px;
     margin-right: 3px;
     text-align: center;
     color: #7a8b98;
 }
 
-div.container aside#left-aside div#profile-groups section a {
+aside#left-aside div#profile-groups section a {
     color: rgba(0, 0, 0, 0.6);
     padding-left: 38px;
 }
 
-div.container aside#left-aside div#profile-groups section a:hover {
+aside#left-aside div#profile-groups section a:hover {
     color: #0073b1;
     text-decoration: underline;
 }
 
-div.container aside#left-aside div#profile-groups > a {
+aside#left-aside div#profile-groups > a {
     display: block;
     text-align: center;
     color: #000;
@@ -523,12 +508,12 @@ div.container aside#left-aside div#profile-groups > a {
     border-top: 1px #cfcfcf solid;
 }
 
-div.container aside#left-aside div#profile-groups > a:hover {
+aside#left-aside div#profile-groups > a:hover {
     color: #0073b1;
     text-decoration: underline;
 }
 
-div.container aside#left-aside div#profile-groups section .group-list {
+aside#left-aside div#profile-groups section .group-list {
     margin-bottom: 15px;
 }
 
@@ -549,6 +534,150 @@ div.container main#main-section {
 
 div.container aside#right-aside {
     grid-area: right-aside;
-    background: yellow;
+    background-color: #fff;
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
     height: 100vh;
+}
+
+/**************************************************************************
+    main container > right aside > RECOMMENDATIONS SECTION
+**************************************************************************/
+
+aside#right-aside div#rec-section {
+    height: 283px;
+    padding: 16px 0;
+    border-bottom: 1px solid #cfcfcf;
+}
+
+aside#right-aside div#rec-section div header {
+    font-size: 18px;
+    padding: 13px 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside#right-aside div#rec-section div header span.fas {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+aside#right-aside div#rec-section div header span.fas > span {
+    display: none;
+    position: absolute;
+    top: -4px;
+    right: 18px;
+
+    font-size: 20px;
+    color: #fff;
+    text-shadow: -1px 0 #fff, 0 1px #cfcfcf, 1px 0 #cfcfcf, 0 -1px #cfcfcf;
+}
+
+aside#right-aside div#rec-section div header span.fas div#float-info {
+    display: none;
+    position: absolute;
+    top: -22px;
+    right: 33px;
+    height: 60px;
+    width: 320px;
+
+    padding: 13px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #cfcfcf;
+    border-radius: 2px;
+    line-height: 1.2;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+}
+
+aside#right-aside div#rec-section div header span.fas div#float-info a {
+    color: #0073b1;
+    font-weight: bold;
+}
+
+aside#right-aside div#rec-section div header span.fas div#square {
+    position: absolute;
+    top: -22px;
+    right: 10px;
+    height: 60px;
+    width: 30px;
+    background: transparent;
+    min-height: 1px;
+}
+
+aside#right-aside div#rec-section > div > div {
+    padding-bottom: 10px;
+}
+
+aside#right-aside div#rec-section > div > div > div {
+    display: flex;
+    align-items: center;
+    padding: 0 10px 3px;
+}
+
+aside#right-aside div#rec-section > div > div > div img {
+    width: 48px;
+    height: 48px;
+    border: 4px solid transparent;
+    border-radius: 2px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+aside#right-aside div#rec-section > div > div > div > div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-right: 5px;
+}
+
+aside#right-aside div#rec-section > div > div > div > div strong {
+    font-size: 14px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+aside#right-aside div#rec-section > div > div > div > div small {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 14px;
+    cursor: pointer;
+}
+
+aside#right-aside div#rec-section > div > div > div button {
+    background: #fff;
+    color: #0073b1;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #0073b1;
+    border-radius: 2px;
+    height: 26px;
+    width: 80px;
+    padding: 0 6px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside#right-aside div#rec-section > div > div > div button:hover {
+    border: 2px solid #0073b1;
+    background: #e4f4fc;
+}
+
+aside#right-aside div#rec-section > div > div > div button span.fas {
+    padding-right: 5px;
+}
+
+aside#right-aside div#rec-section > div > a {
+    color: #0073b1;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 13px;
 }
