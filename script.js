@@ -66,7 +66,26 @@ function waitPageLoading() {
         loadingPage.style.display = "none";
         header.style.display = "flex";
         container.style.display = "grid";
-    }, 2000);
+
+        if (navigator.appVersion.indexOf("Chrome/") != -1) {
+            const profileName = document.getElementById("profile-name");
+            const postAuthorName = document.getElementById("post-author-name");
+
+            const profileSquare = document.getElementById("profile-square");
+
+            const elements = [profileName, postAuthorName];
+
+            console.log(elements);
+
+            elements.map((element) => {
+                element.classList.add("letter-spacing");
+            });
+
+            profileSquare.classList.add("font-16");
+        }
+    }, 500);
 }
 
 waitPageLoading();
+
+// apply only if browser is chrome
