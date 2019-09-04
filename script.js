@@ -6,7 +6,7 @@ function toggleSearchInput() {
     if (button.style.display === "block") {
         button.style.display = "none";
         icon.style.display = "block";
-        input.placeholder = "     Search";
+        input.placeholder = "       Search";
     } else {
         button.style.display = "block";
         icon.style.display = "none";
@@ -83,9 +83,23 @@ function waitPageLoading() {
 
             profileSquare.classList.add("font-16");
         }
-    }, 500);
+    }, 2000);
 }
 
-waitPageLoading();
+window.addEventListener("scroll", (e) => {
+    const profileGroup = document.getElementById("profile-groups");
+    const linkedinSection = document.getElementById("linkedin-section");
+    const rightAside = document.getElementById("right-aside");
 
-// apply only if browser is chrome
+    if (window.scrollY > 356) {
+        profileGroup.classList.add("position-fixed");
+        linkedinSection.classList.add("position-fixed", "right-aside-fixed");
+        rightAside.classList.add("vanish");
+    } else {
+        profileGroup.classList.remove("position-fixed");
+        linkedinSection.classList.remove("position-fixed", "right-aside-fixed");
+        rightAside.classList.remove("vanish");
+    }
+});
+
+waitPageLoading();

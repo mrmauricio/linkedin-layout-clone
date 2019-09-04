@@ -13,21 +13,36 @@
         <script src="https://kit.fontawesome.com/3055f91a99.js"></script>
     </head>
     <body>
+        <!-- HEADER -->
         <header id="main-header">
             <div>
                 <div>
-                    <img src="/images/linkedin.png" alt="" />
+                    <img
+                        id="header-logo"
+                        src="/images/linkedin.png"
+                        alt="LinkedIn"
+                    />
+                    <img
+                        id="header-picture-menu"
+                        src="/images/picture.jpeg"
+                        alt="Profile picture"
+                    />
+                    <span id="header-picture-menu-bars">
+                        <span class="fas fa-bars"></span>
+                    </span>
+
                     <div>
                         <input
                             id="search"
                             type="text"
-                            placeholder="     Search"
+                            placeholder="       Search"
                             onfocus="toggleSearchInput()"
                             onblur="toggleSearchInput()"
                         />
                         <span id="search-icon" class="fas fa-search"></span>
                         <span id="search-button" class="fas fa-search"></span>
                     </div>
+                    <span class="fas fa-comments"></span>
                 </div>
                 <nav>
                     <ul>
@@ -91,6 +106,7 @@
                 </nav>
             </div>
         </header>
+        <!-- LOADING PAGE -->
         <div id="loading-page">
             <div>
                 <img src="/images/linkedin.png" alt="" />
@@ -104,8 +120,9 @@
                 </div>
             </div>
         </div>
+        <!-- MAIN CONTAINER -->
         <div class="container">
-            <!-- PROPAGANDA -->
+            <!-- ADS -->
             <section id="ads">
                 <div>
                     <a>
@@ -118,236 +135,331 @@
                     <span id="ad">Ad </span>
                 </div>
             </section>
-            <!-- ASIDE LEFT -->
-            <aside id="left-aside">
-                <div id="profile-card">
-                    <div id="background"></div>
-                    <div id="profile-info">
-                        <img src="/images/picture.jpeg" alt="Profile picture" />
-                        <strong id="profile-name">Maurício Mendes Rossi</strong>
-                        <small>Front-End Developer</small>
-                    </div>
-                    <div id="profile-links">
-                        <a href="#">
-                            <span>
-                                Who's viewed your profile
-                            </span>
-                            <span class="profile-number">
-                                102
-                            </span>
-                        </a>
-                        <a href="#">
-                            <span>
-                                Connections
-                            </span>
-                            <span class="profile-number">
-                                452
-                            </span>
-                        </a>
-                    </div>
-                    <span>Grow your network</span>
-                    <a href="#">
-                        <span>Access exclusive tools & insights</span>
-                        <span id="profile-premium">
-                            <span id="profile-square">■</span> Try Premium Free
-                            for 1 Month</span
-                        >
-                    </a>
-                </div>
-                <div id="profile-groups">
-                    <section>
-                        <header
-                            onmouseover="showProfileGroupIcon(this)"
-                            onmouseout="showProfileGroupIcon(this)"
-                        >
-                            <span>Recent</span>
-                            <span
-                                class="fas fa-angle-up"
-                                onclick="toggleProfileGroupList(this)"
-                            ></span>
-                        </header>
-                        <ul class="group-list">
-                            <li>
-                                <span class="fas fa-users"></span>
-                                <span>React Developers</span>
-                            </li>
-                            <li>
-                                <span class="fas fa-hashtag"></span>
-                                <span>javascript</span>
-                            </li>
-                            <li>
-                                <span class="fas fa-hashtag"></span>
-                                <span>webdevelopment</span>
-                            </li>
-                            <li>
-                                <span class="fas fa-users"></span>
-                                <span>Javascript Brasil</span>
-                            </li>
-                            <li>
-                                <span class="fas fa-users"></span>
-                                <span>Dog Lovers</span>
-                            </li>
-                        </ul>
-                    </section>
-                    <section>
-                        <header
-                            onmouseover="showProfileGroupIcon(this)"
-                            onmouseout="showProfileGroupIcon(this)"
-                        >
-                            <span class="group-title">Groups</span>
-                            <span
-                                class="fas fa-angle-up"
-                                onclick="toggleProfileGroupList(this)"
-                            ></span>
-                        </header>
-                        <ul>
-                            <li>
-                                <span class="fas fa-users"></span>
-                                <span id="aaaa">React Developers</span>
-                            </li>
-                            <li>
-                                <span class="fas fa-users"></span>
-                                <span>Javascript Brasil</span>
-                            </li>
-                            <li>
-                                <span class="fas fa-users"></span>
-                                <span>Dog Lovers</span>
-                            </li>
-                        </ul>
-                        <div class="group-list">
-                            <a href="#">See all</a>
-                        </div>
-                    </section>
-                    <section>
-                        <header
-                            onmouseover="showProfileGroupIcon(this)"
-                            onmouseout="showProfileGroupIcon(this)"
-                        >
-                            <span class="group-title"> Followed Hashtags</span>
-                            <span
-                                class="fas fa-angle-up"
-                                onclick="toggleProfileGroupList(this)"
-                            ></span>
-                        </header>
-                        <ul>
-                            <li>
-                                <span class="fas fa-hashtag"></span>
-                                <span>javascript</span>
-                            </li>
-                            <li>
-                                <span class="fas fa-hashtag"></span>
-                                <span>webdevelopment</span>
-                            </li>
-                        </ul>
-                        <a href="#">See all</a>
-                    </section>
-                    <a href="#">Discover more</a>
-                </div>
-            </aside>
-            <!-- MAIN AREA -->
-            <main id="main-section">
-                <div id="share-box">
-                    <div id="button-box">
-                        <button id="btn-post">
-                            <span class="fas fa-edit"></span>
-                            <span id="btn-text">Start a post</span>
-                        </button>
-                        <button id="btn-picture">
-                            <span class="fas fa-camera"></span>
-                        </button>
-                        <button id="btn-video">
-                            <span class="fas fa-video"></span>
-                        </button>
-                        <button id="btn-document">
-                            <span class="fas fa-file"></span>
-                        </button>
-                    </div>
-                    <div id="link-box">
-                        <a href="#">Write an article</a>
-                        <span>on LinkedIn</span>
-                    </div>
-                </div>
-                <div id="feed-sort">
-                    <hr />
-                    <button>
-                        <span>Sort by:</span>
-                        <strong>Top</strong>
-                        <span class="fas fa-sort-down"></span>
-                    </button>
-                </div>
-                <article>
-                    <div id="post-author">
-                        <a href="#">
-                            <div>
-                                <img
-                                    src="/images/example-person2.jpeg"
-                                    alt=""
-                                />
-                                <div>
-                                    <div>
-                                        <strong id="post-author-name"
-                                            >Matthew James</strong
-                                        >
-                                        <span>
-                                            <span>&nbsp;·&nbsp;</span> 1st</span
-                                        >
-                                    </div>
-                                    <span>Web Developer at Muse Software</span>
-                                    <span>12h</span>
-                                </div>
-                            </div>
-                        </a>
-                        <div>
-                            <span class="fas fa-circle"></span>
-                            <span class="fas fa-circle"></span>
-                            <span class="fas fa-circle"></span>
-                        </div>
-                    </div>
-                    <div id="post-data">
-                        <p>
-                            Yesterday, I had a conversation with
-                            <span>Maurício Rossi</span>, Front-End Developer,
-                            and found out that he cloned LinkedIn layout using
-                            HTML/CSS. I think you should check this out ;)
-                        </p>
-                        <p id="post-translation">
-                            <button>See translation</button>
-                        </p>
-                        <img src="/images/example-post-image.png" alt="" />
-                    </div>
-                    <div id="post-interactions">
-                        <div id="interactions-amount">
-                            <span
-                                id="like-icon"
-                                class="fas fa-thumbs-up fa-flip-horizontal"
-                            ></span>
-                            <span id="heart-icon" class="fas fa-heart"></span>
-                            <span id="amount-info"
-                                >23 <span>&nbsp;·&nbsp;</span> 4 Comments</span
+            <!-- LEFT ASIDE -->
+            <div id="left-aside-wrapper">
+                <aside id="left-aside">
+                    <div id="profile-card">
+                        <div id="background"></div>
+                        <div id="profile-info">
+                            <img
+                                src="/images/picture.jpeg"
+                                alt="Profile picture"
+                            />
+                            <strong id="profile-name"
+                                >Maurício Mendes Rossi</strong
                             >
+                            <small>Front-End Developer</small>
                         </div>
-                        <div id="interactions-btns">
-                            <button>
+                        <div id="profile-links">
+                            <a href="#">
+                                <span>
+                                    Who's viewed your profile
+                                </span>
+                                <span class="profile-number">
+                                    102
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span>
+                                    Connections
+                                </span>
+                                <span class="profile-number">
+                                    452
+                                </span>
+                            </a>
+                        </div>
+                        <span>Grow your network</span>
+                        <a href="#">
+                            <span>Access exclusive tools & insights</span>
+                            <span id="profile-premium">
+                                <span id="profile-square">■</span> Try Premium
+                                Free for 1 Month</span
+                            >
+                        </a>
+                    </div>
+                    <div id="profile-groups">
+                        <section>
+                            <header
+                                onmouseover="showProfileGroupIcon(this)"
+                                onmouseout="showProfileGroupIcon(this)"
+                            >
+                                <span>Recent</span>
                                 <span
-                                    class="far fa-thumbs-up fa-flip-horizontal"
+                                    class="fas fa-angle-up"
+                                    onclick="toggleProfileGroupList(this)"
                                 ></span>
-                                <span>Like</span>
-                            </button>
-                            <button>
+                            </header>
+                            <ul class="group-list">
+                                <li>
+                                    <span class="fas fa-users"></span>
+                                    <span>React Developers</span>
+                                </li>
+                                <li>
+                                    <span class="fas fa-hashtag"></span>
+                                    <span>javascript</span>
+                                </li>
+                                <li>
+                                    <span class="fas fa-hashtag"></span>
+                                    <span>webdevelopment</span>
+                                </li>
+                                <li>
+                                    <span class="fas fa-users"></span>
+                                    <span>Javascript Brasil</span>
+                                </li>
+                                <li>
+                                    <span class="fas fa-users"></span>
+                                    <span>Dog Lovers</span>
+                                </li>
+                            </ul>
+                        </section>
+                        <section>
+                            <header
+                                onmouseover="showProfileGroupIcon(this)"
+                                onmouseout="showProfileGroupIcon(this)"
+                            >
+                                <span class="group-title">Groups</span>
                                 <span
-                                    class="far fa-comment-dots fa-flip-horizontal"
+                                    class="fas fa-angle-up"
+                                    onclick="toggleProfileGroupList(this)"
                                 ></span>
-                                <span>Comment</span>
+                            </header>
+                            <ul>
+                                <li>
+                                    <span class="fas fa-users"></span>
+                                    <span id="aaaa">React Developers</span>
+                                </li>
+                                <li>
+                                    <span class="fas fa-users"></span>
+                                    <span>Javascript Brasil</span>
+                                </li>
+                                <li>
+                                    <span class="fas fa-users"></span>
+                                    <span>Dog Lovers</span>
+                                </li>
+                            </ul>
+                            <div class="group-list">
+                                <a href="#">See all</a>
+                            </div>
+                        </section>
+                        <section>
+                            <header
+                                onmouseover="showProfileGroupIcon(this)"
+                                onmouseout="showProfileGroupIcon(this)"
+                            >
+                                <span class="group-title">
+                                    Followed Hashtags</span
+                                >
+                                <span
+                                    class="fas fa-angle-up"
+                                    onclick="toggleProfileGroupList(this)"
+                                ></span>
+                            </header>
+                            <ul>
+                                <li>
+                                    <span class="fas fa-hashtag"></span>
+                                    <span>javascript</span>
+                                </li>
+                                <li>
+                                    <span class="fas fa-hashtag"></span>
+                                    <span>webdevelopment</span>
+                                </li>
+                            </ul>
+                            <a href="#">See all</a>
+                        </section>
+                        <a href="#">Discover more</a>
+                    </div>
+                </aside>
+            </div>
+            <!-- MAIN -->
+            <div id="main-wrapper">
+                <main id="main-section">
+                    <div id="share-box">
+                        <div id="button-box">
+                            <button id="btn-post">
+                                <span class="fas fa-edit"></span>
+                                <span id="btn-text">Start a post</span>
                             </button>
-                            <button>
-                                <span class="far fa-share-square"></span>
-                                <span>Share</span>
+                            <button id="btn-picture">
+                                <span class="fas fa-camera"></span>
                             </button>
+                            <button id="btn-video">
+                                <span class="fas fa-video"></span>
+                            </button>
+                            <button id="btn-document">
+                                <span class="fas fa-file"></span>
+                            </button>
+                        </div>
+                        <div id="link-box">
+                            <a href="#">Write an article</a>
+                            <span>on LinkedIn</span>
                         </div>
                     </div>
-                </article>
-            </main>
-            <!-- ASIDE RIGHT -->
+                    <div id="feed-sort">
+                        <hr />
+                        <button>
+                            <span>Sort by:</span>
+                            <strong>Top</strong>
+                            <span class="fas fa-sort-down"></span>
+                        </button>
+                    </div>
+                    <article>
+                        <div id="post-author">
+                            <a href="#">
+                                <div>
+                                    <img
+                                        src="/images/example-person2.jpeg"
+                                        alt=""
+                                    />
+                                    <div>
+                                        <div>
+                                            <strong id="post-author-name"
+                                                >Matthew James</strong
+                                            >
+                                            <span>
+                                                <span>&nbsp;·&nbsp;</span>
+                                                1st</span
+                                            >
+                                        </div>
+                                        <span
+                                            >Web Developer at Muse
+                                            Software</span
+                                        >
+                                        <span>12h</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div>
+                                <span class="fas fa-circle"></span>
+                                <span class="fas fa-circle"></span>
+                                <span class="fas fa-circle"></span>
+                            </div>
+                        </div>
+                        <div id="post-data">
+                            <p>
+                                Yesterday I had a conversation with
+                                <span>Maurício Rossi</span>, Front-End
+                                Developer, and found out that he cloned LinkedIn
+                                layout using HTML/CSS. I think you should check
+                                this out ;)
+                            </p>
+                            <p id="post-translation">
+                                <button>See translation</button>
+                            </p>
+                            <img src="/images/example-post-image.png" alt="" />
+                        </div>
+                        <div id="post-interactions">
+                            <div id="interactions-amount">
+                                <span
+                                    id="like-icon"
+                                    class="fas fa-thumbs-up fa-flip-horizontal"
+                                ></span>
+                                <span
+                                    id="heart-icon"
+                                    class="fas fa-heart"
+                                ></span>
+                                <span id="amount-info"
+                                    >23 <span>&nbsp;·&nbsp;</span> 4
+                                    Comments</span
+                                >
+                            </div>
+                            <div id="interactions-btns">
+                                <button>
+                                    <span
+                                        class="far fa-thumbs-up fa-flip-horizontal"
+                                    ></span>
+                                    <span>Like</span>
+                                </button>
+                                <button>
+                                    <span
+                                        class="far fa-comment-dots fa-flip-horizontal"
+                                    ></span>
+                                    <span>Comment</span>
+                                </button>
+                                <button>
+                                    <span class="far fa-share-square"></span>
+                                    <span>Share</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div id="post-author">
+                            <a href="#">
+                                <div>
+                                    <img
+                                        src="/images/example-person3.jpeg"
+                                        alt=""
+                                    />
+                                    <div>
+                                        <div>
+                                            <strong id="post-author-name"
+                                                >Alec Fisher</strong
+                                            >
+                                            <span>
+                                                <span>&nbsp;·&nbsp;</span>
+                                                1st</span
+                                            >
+                                        </div>
+                                        <span>Web Designer at SL Systems</span>
+                                        <span>15h</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <div>
+                                <span class="fas fa-circle"></span>
+                                <span class="fas fa-circle"></span>
+                                <span class="fas fa-circle"></span>
+                            </div>
+                        </div>
+                        <div id="post-data">
+                            <p>
+                                You all could check
+                                <span>Maurício Rossi</span>'s Github, he has
+                                many academic projects using technologies such
+                                as Javascript, React, Redux, Sagas, HTML, CSS
+                                and others. Try clicking
+                                <a href="https://github.com/mrmauricio">here</a>
+                                ;)
+                            </p>
+                            <p id="post-translation">
+                                <button>See translation</button>
+                            </p>
+                            <img src="/images/example-post-image2.png" alt="" />
+                        </div>
+                        <div id="post-interactions">
+                            <div id="interactions-amount">
+                                <span
+                                    id="like-icon"
+                                    class="fas fa-thumbs-up fa-flip-horizontal"
+                                ></span>
+                                <span id="amount-info"
+                                    >18 <span>&nbsp;·&nbsp;</span> 6
+                                    Comments</span
+                                >
+                            </div>
+                            <div id="interactions-btns">
+                                <button>
+                                    <span
+                                        class="far fa-thumbs-up fa-flip-horizontal"
+                                    ></span>
+                                    <span>Like</span>
+                                </button>
+                                <button>
+                                    <span
+                                        class="far fa-comment-dots fa-flip-horizontal"
+                                    ></span>
+                                    <span>Comment</span>
+                                </button>
+                                <button>
+                                    <span class="far fa-share-square"></span>
+                                    <span>Share</span>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </main>
+            </div>
+            <!-- RIGHT ASIDE -->
             <aside id="right-aside">
                 <div id="rec-section">
                     <div>
